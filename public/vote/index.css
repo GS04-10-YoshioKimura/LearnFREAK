@@ -1,0 +1,225 @@
+
+
+#ugCanvas {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 256px;
+    height: 246px;
+    background-color: aqa;
+}
+
+#percent {
+    width: 300px;
+    position: relative;
+    text-align: center;
+}
+
+.btn01 {
+    width: 300px;
+}
+
+.sample input {
+    display: none;
+}
+
+.xxx {
+    position: fixed;
+    top:100px;
+    right: 50px;
+}
+
+.sample label {
+    background-color: #bdc3c7;
+    color: #869198;
+    position: relative;
+    left: 70px;
+    top: 30px;
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    font-size: 10px;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    line-height: 60px;
+    transition: .2s;
+}
+
+
+/*
+.sample label:first-of-type {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    font-size: 20px;
+    background: #bdc3c7;
+    color: #869198;
+}
+
+.sample label:last-of-type {
+
+   width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+
+}
+*/
+
+.sample .switch-off {
+    font-size: 20%;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    left: 60px;
+    top: 30px;
+    margin: 0 auto;
+    border: 1px solid #aaf2fb;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    /*
+    transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
+*/
+    box-shadow: inset 0px 0px 0px blue;
+}
+
+.sample input[type="radio"]:checked + .switch-off {
+    background-color: #aaf2fb;
+    font-size: 20%;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    left: 60px;
+    top: 30px;
+    margin: 0 auto;
+    border: 1px solid #aaf2fb;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    /*
+    transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
+*/
+    box-shadow: inset 0px 0px 0px blue;
+}
+
+.sample input[type="radio"]:checked + .switch-on {
+    background-color: #fbaa6e;
+    font-size: 20%;
+    cursor: pointer;
+    float: left;
+    position: relative;
+    left: 70px;
+    top: 30px;
+    margin: 0 auto;
+    /*    border: 1px solid #fbaa6e;*/
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    /*
+    transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
+*/
+    /*    box-shadow: inset 0px 0px 0px #fbaa6e;*/
+}
+
+
+/*
+#fbaa6e;
+#aaf2fb
+#btnok {
+    cursor: pointer;
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    margin: 0 auto;
+    width: 60px;
+    height: 38px;
+    background: #fbaa6e;
+    border: 1px solid #fbaa6e;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
+    box-shadow: 0px 6px 1px #c30b37;
+}
+
+#btnok:hover {
+    background: #fbaa6e;
+    border: 1px solid #FFF;
+    box-shadow: 0px 6px 1px #c30b37;
+}
+
+#btnok:active {
+    background: #;
+    border: 1px solid #FFF;
+    box-shadow: inset 0px 0px 0px #fbaa6e;
+}
+*/
+
+
+/*
+
+#btnng {
+    cursor: pointer;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 60px;
+    height: 38px;
+    background: #aaf2fb;
+    border: 1px solid #aaf2fb;
+    border-radius: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    padding: 42px 20px 20px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 70%;
+    transition: background-color 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in;
+    box-shadow: 0px 6px 1px #aaa2fb;
+}
+
+#btnng:hover {
+    background: #aaf2fb;
+    border: 1px solid #FFF;
+    box-shadow: 0px 6px 1px #aaf2fb;
+}
+
+#btnng:active {
+    background: #aaf2fb;
+    border: 1px solid #FFF;
+    box-shadow: inset 0px 0px 0px #aaf2fb;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+*/
+
+
+/*------------------------------------*/

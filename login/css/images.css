@@ -1,0 +1,25 @@
+@charset "utf-8";
+div#uploadform {
+    text-align: center;
+    border: 3px dotted #aaa;
+    margin: 10px;
+    padding: 20px;
+}
+
+input[type="submit"] {
+    background: lightsteelblue;
+    border: none;
+    padding: 8px 13px;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 1px 1px #aaa;
+    cursor: pointer;
+}
+
+img.imageframe {
+    background: whitesmoke;
+    padding: 10px 10px 100px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px #eee;
+}

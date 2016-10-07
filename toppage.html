@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="realll.css">
+
+    <script type="text/javascript" src="https://bam.nr-data.net/1/efc8ac47be?a=4641661&amp;v=963.8b1290f&amp;to=JQ1WQERYDwoHQU4JBBURV1pFGAoIBlYZ&amp;rst=3107&amp;ref=https://dhw.schooltakt.com/lessons&amp;ap=172&amp;be=992&amp;fe=2084&amp;dc=1260&amp;perf=%7B%22timing%22:%7B%22of%22:1470817968807,%22n%22:0,%22r%22:643,%22re%22:727,%22f%22:727,%22dn%22:727,%22dne%22:727,%22c%22:727,%22ce%22:727,%22rq%22:735,%22rp%22:918,%22rpe%22:922,%22dl%22:923,%22di%22:2251,%22ds%22:2251,%22de%22:2327,%22dc%22:3076,%22l%22:3076,%22le%22:3080%7D,%22navigation%22:%7B%22rc%22:1%7D%7D&amp;jsonp=NREUM.setToken"></script>
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/ebwywsqe"></script>
+    <script src="https://js-agent.newrelic.com/nr-963.min.js"></script>
+    <script type="text/javascript" async="" src="https://cdn.heapanalytics.com/js/heap-3956430182.js"></script>
+    <script async="" src="https://www.fullstory.com/s/fs.js"></script>
+    <script type="text/javascript">
+        window.NREUM || (NREUM = {});
+        NREUM.info = {
+            "beacon": "bam.nr-data.net",
+            "errorBeacon": "bam.nr-data.net",
+            "licenseKey": "efc8ac47be",
+            "applicationID": "4641661",
+            "transactionName": "JQ1WQERYDwoHQU4JBBURV1pFGAoIBlYZ",
+            "queueTime": 0,
+            "applicationTime": 172,
+            "agent": ""
+        }
+    </script>
+    <script type="text/javascript">
+        window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) {
+            function r(n) {
+                if (!e[n]) {
+                    var o = e[n] = {
+                        exports: {}
+                    };
+                    t[n][0].call(o.exports, function (e) {
+                        var o = t[n][1][e];
+                        return r(o || e)
+                    }, o, o.exports)
+                }
+                return e[n].exports
+            }
+            if ("function" == typeof __nr_require) return __nr_require;
+            for (var o = 0; o < n.length; o++) r(n[o]);
+            return r
+        }({
+            1: [function (t, e, n) {
+                function r() {}
+
+                function o(t, e, n) {
+                    return function () {
+                        return i(t, [(new Date).getTime()].concat(u(arguments)), e ? null : this, n), e ? void 0 : this
+                    }
+                }
+                var i = t("handle"),
+                    a = t(2),
+                    u = t(3),
+                    c = t("ee").get("tracer"),
+                    f = NREUM;
+                "undefined" == typeof window.newrelic && (newrelic = f);
+                var s = ["setPageViewName", "setCustomAttribute", "finished", "addToTrace", "inlineHit"],
+                    p = "api-",
+                    l = p + "ixn-";
+                a(s, function (t, e) {
+                    f[e] = o(p + e, !0, "api")
+                }), f.addPageAction = o(p + "addPageAction", !0), e.exports = newrelic, f.interaction = function () {
+                    return (new r).get()
+                };
+                var d = r.prototype = {
+                    createTracer: function (t, e) {
+                        var n = {},
+                            r = this,
+                            o = "function" == typeof e;
+                        return i(l + "tracer", [Date.now(), t, n], r),
+                            function () {
+                                if (c.emit((o ? "" : "no-") + "fn-start", [Date.now(), r, o], n), o) try {
+                                    return e.apply(this, arguments)
+                                } finally {
+                                    c.emit("fn-end", [Date.now()], n)
+                                }
+                            }
+                    }
+                };
+                a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) {
+                    d[e] = o(l + e)
+                }), newrelic.noticeError = function (t) {
+                    "string" == typeof t && (t = new Error(t)), i("err", [t, (new Date).getTime()])
+                }
+            }, {}],
+            2: [function (t, e, n) {
+                function r(t, e) {
+                    var n = [],
+                        r = "",
+                        i = 0;
+                    for (r in t) o.call(t, r) && (n[i] = e(r, t[r]), i += 1);
+                    return n
+                }
+                var o = Object.prototype.hasOwnProperty;
+                e.exports = r
+            }, {}],
+            3: [function (t, e, n) {
+                function r(t, e, n) {
+                    e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+                    for (var r = -1, o = n - e || 0, i = Array(o < 0 ? 0 : o); ++r < o;) i[r] = t[e + r];
+                    return i
+                }
+                e.exports = r
+            }, {}],
+            ee: [function (t, e, n) {
+                function r() {}
+
+                function o(t) {
+                    function e(t) {
+                        return t && t instanceof r ? t : t ? u(t, a, i) : i()
+                    }
+
+                    function n(n, r, o) {
+                        t && t(n, r, o);
+                        for (var i = e(o), a = l(n), u = a.length, c = 0; c < u; c++) a[c].apply(i, r);
+                        var s = f[m[n]];
+                        return s && s.push([w, n, r, i]), i
+                    }
+
+                    function p(t, e) {
+                        g[t] = l(t).concat(e)
+                    }
+
+                    function l(t) {
+                        return g[t] || []
+                    }
+
+                    function d(t) {
+                        return s[t] = s[t] || o(n)
+                    }
+
+                    function v(t, e) {
+                        c(t, function (t, n) {
+                            e = e || "feature", m[n] = e, e in f || (f[e] = [])
+                        })
+                    }
+                    var g = {},
+                        m = {},
+                        w = {
+                            on: p,
+                            emit: n,
+                            get: d,
+                            listeners: l,
+                            context: e,
+                            buffer: v
+                        };
+                    return w
+                }
+
+                function i() {
+                    return new r
+                }
+                var a = "nr@context",
+                    u = t("gos"),
+                    c = t(2),
+                    f = {},
+                    s = {},
+                    p = e.exports = o();
+                p.backlog = f
+            }, {}],
+            gos: [function (t, e, n) {
+                function r(t, e, n) {
+                    if (o.call(t, e)) return t[e];
+                    var r = n();
+                    if (Object.defineProperty && Object.keys) try {
+                        return Object.defineProperty(t, e, {
+                            value: r,
+                            writable: !0,
+                            enumerable: !1
+                        }), r
+                    } catch (i) {}
+                    return t[e] = r, r
+                }
+                var o = Object.prototype.hasOwnProperty;
+                e.exports = r
+            }, {}],
+            handle: [function (t, e, n) {
+                function r(t, e, n, r) {
+                    o.buffer([t], r), o.emit(t, e, n)
+                }
+                var o = t("ee").get("handle");
+                e.exports = r, r.ee = o
+            }, {}],
+            id: [function (t, e, n) {
+                function r(t) {
+                    var e = typeof t;
+                    return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, i, function () {
+                        return o++
+                    })
+                }
+                var o = 1,
+                    i = "nr@id",
+                    a = t("gos");
+                e.exports = r
+            }, {}],
+            loader: [function (t, e, n) {
+                function r() {
+                    if (!h++) {
+                        var t = y.info = NREUM.info,
+                            e = s.getElementsByTagName("script")[0];
+                        if (t && t.licenseKey && t.applicationID && e) {
+                            c(m, function (e, n) {
+                                t[e] || (t[e] = n)
+                            });
+                            var n = "https" === g.split(":")[0] || t.sslForHttp;
+                            y.proto = n ? "https://" : "http://", u("mark", ["onload", a()], null, "api");
+                            var r = s.createElement("script");
+                            r.src = y.proto + t.agent, e.parentNode.insertBefore(r, e)
+                        }
+                    }
+                }
+
+                function o() {
+                    "complete" === s.readyState && i()
+                }
+
+                function i() {
+                    u("mark", ["domContent", a()], null, "api")
+                }
+
+                function a() {
+                    return (new Date).getTime()
+                }
+                var u = t("handle"),
+                    c = t(2),
+                    f = window,
+                    s = f.document,
+                    p = "addEventListener",
+                    l = "attachEvent",
+                    d = f.XMLHttpRequest,
+                    v = d && d.prototype;
+                NREUM.o = {
+                    ST: setTimeout,
+                    CT: clearTimeout,
+                    XHR: d,
+                    REQ: f.Request,
+                    EV: f.Event,
+                    PR: f.Promise,
+                    MO: f.MutationObserver
+                }, t(1);
+                var g = "" + location,
+                    m = {
+                        beacon: "bam.nr-data.net",
+                        errorBeacon: "bam.nr-data.net",
+                        agent: "js-agent.newrelic.com/nr-963.min.js"
+                    },
+                    w = d && v && v[p] && !/CriOS/.test(navigator.userAgent),
+                    y = e.exports = {
+                        offset: a(),
+                        origin: g,
+                        features: {},
+                        xhrWrappable: w
+                    };
+                s[p] ? (s[p]("DOMContentLoaded", i, !1), f[p]("load", r, !1)) : (s[l]("onreadystatechange", o), f[l]("onload", r)), u("mark", ["firstbyte", a()], null, "api");
+                var h = 0
+            }, {}]
+        }, {}, ["loader"]);
+    </script>
+    <title>LEARN freak</title>
+    <meta name="description" content="schoolTakt">
+    <meta name="author" content="schoolTakt">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon_schooltakt-c76d8ac29508d74df13bf76b7b7097474cf450fc9dbe291e259cb0c6ca103720.ico">
+
+    <link rel="apple-touch-icon" href="/assets/apple_touch_icon_schooltakt-5cec43cd73684b1acd3c3ee3a819e05c417abba8ace6172ca16dbce844f3ff01.png">
+
+    <link rel="stylesheet" media="screen" href="/assets/application-7a404765f0fe13d37d9470535a070f0e3d603e2247bab47246775021ff3ed745.css">
+    <link rel="stylesheet" media="print" href="/assets/print-03d1df4d8e43b28f9f7f2071daba4ad462d2ead42cbe2ba1eed95383c7b441ad.css">
+    <script src="//developer.appear.in/scripts/appearin-sdk.0.0.4.min.js"></script>
+    <script src="/assets/application-d6e8bc2fb818e04632707eae717558ea0758e3d459ca7d74ec95bbc176fb374a.js"></script>
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'www.fullstory.com';
+        window['_fs_org'] = '1E787';
+        window['_fs_namespace'] = 'FS';
+        (function (m, n, e, t, l, o, g, y) {
+            if (e in m && m.console && m.console.log) {
+                m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+                return;
+            }
+            g = m[e] = function (a, b) {
+                g.q ? g.q.push([a, b]) : g._api(a, b);
+            };
+            g.q = [];
+            o = n.createElement(t);
+            o.async = 1;
+            o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0];
+            y.parentNode.insertBefore(o, y);
+            g.identify = function (i, v) {
+                g(l, {
+                    uid: i
+                });
+                if (v) g(l, v)
+            };
+            g.setUserVars = function (v) {
+                g(l, v)
+            };
+            g.identifyAccount = function (i, v) {
+                o = 'account';
+                v = v || {};
+                v.acctId = i;
+                g(o, v)
+            };
+            g.clearUserCookie = function (d, i) {
+                d = n.domain;
+                while (1) {
+                    n.cookie = 'fs_uid=;domain=' + d +
+                        ';path=/;expires=' + new Date(0);
+                    i = d.indexOf('.');
+                    if (i < 0) break;
+                    d = d.slice(i + 1)
+                }
+            }
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+
+        // This is an example script - don't forget to change it!
+        FS.identify('17934', {
+            displayName: 't01',
+        });
+    </script>
+
+    <script type="text/javascript">
+        window.heap = window.heap || [], heap.load = function (e, t) {
+            window.heap.appid = e, window.heap.config = t = t || {};
+            var r = t.forceSSL || "https:" === document.location.protocol,
+                a = document.createElement("script");
+            a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(a, n);
+            for (var o = function (e) {
+                    return function () {
+                        heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+        };
+        heap.load('production' === 'production' ? '3956430182' : '2311826127');
+    </script>
+
+    <script src="//d1ks1friyst4m3.cloudfront.net/toolbar/prod/td.js" async="" data-trackduck-id="576d4f22e92ef5204415ec69"></script>
+    <script type="text/javascript">
+        I18n.defaultLocale = "ja";
+        I18n.locale = "ja";
+        I18n.fallbacks = true;
+    </script>
+
+
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="7FjREW4UqLIK45rFd6ZVrWRGLOuC3iEDvyGr+4DcVHqoWbHv7y+WvaI5VHlnpZnkWL3Qo4iiYc11SK93iZyyBw==">
+</head>
+
+<body id="body" class="fixed i18n-ja role-teacher">
+    <input type="hidden" name="NODE_ENDPOINT" id="NODE_ENDPOINT" value="/ws">
+
+
+
+    <div id="video-lesson-container">
+    </div>
+    <div id="message-board-container"></div>
+    <div id="pjax-loading" style="display: none;">
+        <div>
+            <button class="exercise-button-dark">キャンセル</button>
+        </div>
+    </div>
+    <div id="pjax-placeholder">
+        <div>
+            <!-- start header-->
+            <header class="header">
+                <!-- start navbar, this navbar on top -->
+                <div id="navbar-top" class="navbar navbar-fixed-top">
+                    <!-- navbar inner-->
+                    <div class="navbar-inner user-role-background">
+                        <!-- container-->
+                        <div class="container">
+                            <!-- Your brand here, images or text -->
+                            <a class="brand" style="margin-right: 9px;" href="/">
+                                <i class="aweso-home brand-home color-white" style="margin-left: 10px"></i>
+                                <img alt="LEARN freak" class="none" style="height: 30px" src="/assets/schooltakt_header_logo-65a0ed89b4d0f44694954993f7772ef6dd219c95e7386e14e32d5b3a45374b11.png">
+                            </a>
+                            <li class="help-inline pull-right">
+                                <a href="/lessons?refresh=0.47458808161348287" class="btn" style="color:white;background: rgba(0,0,0,0.4)">
+                                    <i class="aweso-repeat"></i> ページ更新
+                                </a>
+                            </li>
+
+                            <li class="help-inline pull-right">
+                                <a>
+
+                                </a>
+                            </li>
+
+
+                            <li class="dropdown help-inline pull-right">
+                                <a class="btn dropdown-toggle" data-toggle="dropdown" style="color:white;background:rgba(0,0,0,0.4)">
+                                    <img class="img-thumbnail small" src="/images/icon/teacher.jpg" alt="Teacher">
+                                    <span class="user-name">t01 </span>
+                                    <i class="aweso-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                                    <li><a tabindex="-1" href="/users/edit">プロフィール</a></li>
+                                    <li><a href="http://schooltakt.com/manual/" data-prevent-pjax="true" target="_blank"> マニュアル</a></li>
+                                    <li><a tabindex="-1" href="/tokens">外部サービス設定</a></li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a data-prevent-pjax="true" tabindex="-1" rel="nofollow" data-method="delete" href="/users/sign_out">
+              ログアウト
+</a> </li>
+                                </ul>
+                            </li>
+
+
+                            <div class="header-menu-left">
+
+                            </div>
+
+                            <!-- Everything you want hidden at 940px or less, leave it blank! (this use when side-left collapse) -->
+                            <div id="navbar-collapse" class="nav-collapse collapse hidden-desktop"></div>
+
+                        </div>
+                        <!--/container-->
+                    </div>
+                    <!--/navbar-inner-->
+
+                </div>
+                <!--/ navbar-->
+
+            </header>
+            <!--/ end header-->
+
+            <input type="hidden" name="notification_events" id="notification_events" value="">
+
+
+
+
+            <!-- start section content-->
+            <section class="section-content">
+                <div class="content full-page">
+                    <header class="content-header">
+                        <ul class="content-action pull-right" style="margin: 0;">
+                            <li>
+                                <a href="makelecturename.html">
+                                    <button class="btn btn-st btn-gray"><i class="aweso-plus aweso-large"></i>新規授業</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/exercise_templates">
+                                    <button class="btn btn-st btn-gray"><i class="aweso-file aweso-large"></i>課題テンプレート管理</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/texts">
+                                    <button class="btn btn-st btn-gray"><i class="aweso-picture aweso-large"></i>ファイル共有</button>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="page-header">
+                            <h3>
+<i class="aweso-home"></i>ホーム</h3></div>
+                    </header>
+                    <article class="content-page">
+                        <div class="main-page">
+                            <div class="content-inner">
+                                <div class="widget-content" style="margin-bottom: 20px;">
+                                    <div class="row-fluid">
+                                        <div class="span12">
+                                            <div class="item-box-skyblue">
+                                                <div class="title-box widget">
+                                                    <span class="title">英語</span><a class="btn btn-st btn-white pull-right" href="/lessons/tags/14">すべて見る</a>
+                                                </div>
+                                                <div class="tiles">
+                                                    <ul class="tile-items">
+                                                        <li class="tile tile-item tile-st tile-green">
+                                                            <a href="/lessons/3412">
+                                                                <div class="tile-content">
+                                                                    <div class="lesson-btn">
+                                                                        <div class="lesson-btn-title">サンプル英語</div>
+                                                                        <div class="lesson-btn-info">
+                                                                            <span class="lesson-btn-date">08<small>月</small>27<small>日</small>&nbsp;11:50<small>〜</small>12:20</span><span class="lesson-btn-teachers">t01</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content" style="margin-bottom: 20px;">
+                                    <div class="row-fluid">
+                                        <div class="span12">
+                                            <div class="item-box-skyblue">
+                                                <div class="title-box widget">
+                                                    <span class="title">算数</span><a class="btn btn-st btn-white pull-right" href="/lessons/tags/20">すべて見る</a>
+                                                </div>
+                                                <div class="tiles">
+                                                    <ul class="tile-items"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="modal hide fade" id="lesson_attend_modal">
+                    <div class="modal-header">
+                        <button aria-hidden="" class="close" data-dismiss="modal" type="button">×</button>
+                        <h3>授業の参加コードを入力し、アシスタントとして授業に参加</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form class="search-form" action="/lessons/attend" accept-charset="UTF-8" data-remote="true" method="post">
+                            <input name="utf8" type="hidden" value="✓">
+                            <input autocomplete="off" name="attend_code" placeholder="授業参加コード" type="search">
+                            <input class="btn btn-st" style="vertical-align: top" type="submit" value="参加">
+                        </form>
+                        <p id="lesson_attend_error" style="color: red"></p>
+                    </div>
+                </div>
+                <script>
+                    var ROOM_NAME = null;
+                </script>
+
+            </section>
+            <!-- /end section content-->
+        </div>
+    </div>
+
+    <!--/ footer -->
+    <div id="video-chat-panel">
+        <div id="video-chat-main">
+            <iframe id="video-chat-iframe"></iframe>
+        </div>
+        <div id="video-chat-buttons">
+            <i class="icon-video"></i>
+            <a class="btn" data-size="min"><i class="icon-minus"></i></a>
+            <a class="btn" data-size="medium"><i class="icon-stop"></i></a>
+            <a class="btn" data-size="max"><i class="icon-fullscreen"></i></a>
+        </div>
+    </div>
+    <script id="IntercomSettingsScriptTag">
+        window.intercomSettings = {
+            "created_at": 1466995768,
+            "user_id": "schooltakt__17934",
+            "uid": "t01",
+            "name": "t01",
+            "sign_in_count": 0,
+            "icon_url": "/images/icon/teacher.jpg",
+            "japanese_kana": "せんせい1",
+            "gender": null,
+            "user_hash": "a90c6773f929a9b0fd5864e8122c13abab28076b4817590d3fba015fbef63305",
+            "app_id": "ebwywsqe",
+            "company": {
+                "id": 194,
+                "name": "デジタルハリウッド",
+                "created_at": 1466995683,
+                "plan": "trial",
+                "subdomain": "dhw",
+                "trial_ends_on": "2016-08-27",
+                "limiter": "trial"
+            }
+        };
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://widget.intercom.io/widget/ebwywsqe';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            };
+        })()
+    </script>
+
+
+    <div id="trackduck" data-html2canvas-ignore="" style="position: static !important;">
+        <div class="td_markers" style="position: static !important;"></div>
+    </div>
+
+            }
+        </style>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

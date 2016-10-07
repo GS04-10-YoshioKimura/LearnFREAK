@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ドーナツ</title>
+    <script src="Chart.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="vote/donutchart.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <div class="xxx">
+        <div id="percent"></div>
+        <canvas id="ugCanvas"></canvas>
+        <div class="btn01">
+        </div>
+
+        <div class="sample clearfix">
+            <input type="radio" name="s2" id="off" value="0" checked="checked">
+            <label for="off" class="switch-off" id="btnng">う〜ん。。</label>
+            <input type="radio" name="s2" id="on" value="1">
+            <label for="on" class="switch-on" id="btnok">なるほど！</label>
+        </div>
+
+    </div>
+
+    <!-- <script>
+        $(function () {
+            var radiobtn1 = document.getElementById("off");
+            var radiobtn2 = document.getElementById("on");
+
+            if (radiobtn1.checked == true) {
+                //alert("offがチェックされています。");
+            } else if (radiobtn2.checked == true) {
+                //alert("onがチェックされています。");
+            }
+
+            var know;
+            know = Math.floor(Math.random() * 100) + 1;
+            var dontknow = 100 - know;
+            var percent = document.getElementById("percent");
+            percent.innerHTML = "みんなの理解度は " + know + " %";
+            var doughnutData = [
+                {
+                    value: know,
+                    color: "#fbaa6e"
+                    },
+                {
+                    value: dontknow,
+                    color: "#aaf2fb"
+                    }
+                ];
+            var myDoughnut = new Chart(document.getElementById("ugCanvas").getContext("2d")).Doughnut(doughnutData);
+
+
+            $("#btnng,#btnok").on('click', function () {
+                know = Math.floor(Math.random() * 100) + 1;
+                dontknow = 100 - know;
+                percent.innerHTML = "みんなの理解度は " + know + " %";
+                doughnutData = [
+                    {
+                        value: know,
+                        color: "#fbaa6e"
+                        },
+                    {
+                        value: dontknow,
+                        color: "#aaf2fb"
+                        }
+                    ];
+                myDoughnut = new Chart(document.getElementById("ugCanvas").getContext("2d")).Doughnut(doughnutData);
+            });
+        });
+    </script> -->
+
+</body>
+
+</html>

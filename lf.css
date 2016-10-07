@@ -1,0 +1,338 @@
+body {
+  margin:0px;padding:0px;
+        font-family: Raleway, Hiragino Kaku Gothic ProN, メイリオ, sans-serif;
+        -webkit-font-smoothing: antialiased
+
+    }
+
+    a {
+        color: #4d6cc3;
+        text-decoration: none
+    }
+    .post{
+      margin-left: 30px;
+      margin-top: 5px;
+      /*background-color: aqua;*/
+    }
+
+    a:hover {
+        color: #869bd6;
+        text-decoration: underline
+    }
+    #goodid{
+      border-radius: 5px;
+      border: solid 1px;
+      color:black;
+    }
+
+    .header {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 44px;
+        max-width: 100%;
+        border-bottom: 1px solid #d9d9d9;
+        color: #3f3f3f;
+        background-color: #fff;
+        z-index: 1
+    }
+
+    .header>* {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    .header .app-link {
+        padding-left: 260px;
+        display: flex;
+        align-items: center;
+        position: relative
+    }
+
+    .header .app-link .app-logo {
+        width: 24px;
+        height: 24px;
+        padding-right: 10px
+    }
+
+    .header .app-link .app-name {
+        font-family: Raleway;
+        padding-top: 4px;
+        font-size: 22px;
+        height: 30px
+    }
+
+    .header .app-link a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%
+    }
+
+    .header .user-view {
+        flex: 1;
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        justify-content: flex-end
+    }
+
+    .header .user-view .ico {
+        width: 26px;
+        height: 26px;
+        margin-right: 4px;
+        border-radius: 50%
+    }
+
+    .header .user-view .name {
+        margin-right: 8px
+    }
+
+    .header .user-view a {
+        cursor: pointer
+    }
+
+    .thread .user-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        height: 100%;
+        min-width: 240px;
+        position: fixed;
+        background-color: #525282;
+        color: hsla(0, 0%, 100%, .8)
+    }
+
+    .thread .user-list ul {
+        padding: 0
+    }
+
+    .thread .user-list ul li {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        list-style: none;
+        margin: 16px 24px;
+        height: 32px
+    }
+
+    .thread .user-list ul li .ico {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+        border-radius: 50%
+    }
+
+    .thread .user-list ul .more-users {
+        font-weight: 400;
+        padding-left: 44px
+    }
+
+    .thread .thread-container {
+      padding-left: 240px;
+    }
+    .thread .thread-container .messages-container {
+        padding: 44px 0 0 0px;
+        margin: 0 auto;
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        /*position: fixed;
+        bottom: 100px;
+        right: 100px;*/
+        z-index: 1
+
+    }
+
+    .thread .thread-container .messages-container .name {
+        margin-right: 10px
+    }
+
+    .thread .thread-container .messages-container .messages {
+        margin: 30px 190px;
+    }
+
+    .thread .thread-container .messages-container .messages .message {
+        margin: 16px 0;
+        display: flex
+    }
+
+    .thread .thread-container .messages-container .messages .message .ico {
+        width: 32px;
+        height: 32px;
+        margin-right: 12px;
+        border-radius: 50%;
+    }
+
+    .thread .thread-container .messages-container .messages .message .texts {
+        flex: 1;
+    }
+
+    .thread .thread-container .messages-container .messages .message .texts {
+        word-break: break-all;
+        color: #303030;
+        white-space: pre-wrap;
+    }
+
+    .thread .thread-container .messages-container .messages .message .texts .info .post {
+        margin-bottom: 4px;
+    }
+
+    .thread .thread-container .messages-container .messages .message .texts .info .user .post {
+        display: inline-block;
+        color: #303030;
+        font-weight: 500;
+        margin-right: 12px;
+    }
+}
+.thread .thread-container .messages-container .messages .message .texts .info .time .post {
+    display: inline-block;
+    color: #9b9b9b;
+    font-weight: 300;
+}
+.thread .thread-container .messages-container .message-form {
+
+    appearance: none;
+    resize: none;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    padding: 8px;
+    height: 44px;
+    margin: 8px 32px 32px;
+    color: #303030;
+    z-index: 4;
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+    height: 60px;
+}
+.con{
+
+    background-color: white;
+
+  @media (min-width: 600px) {
+        width: 40%;
+  }
+  @media (min-width: 960px) {
+     /* (C)PC以上向けスタイル */
+        width: 70%;
+  }
+  @media (min-width: 1281px) {
+     /* (D)広いPC向けスタイル */
+        width: 80%;
+  }
+    padding-left: 30px;
+    padding-top: 0px;
+    /*position: fixed;
+    top:  650px;
+    background-color: aqua;
+    left: 240px;*/
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 240px;
+    height: 70px;
+}
+.txt{
+  appearance: none;
+  resize: none;
+  outline: none;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  padding: 8px;
+  height: 30px;
+  width: 70%;
+  margin: 0px 0px 32px;
+  color: #303030;
+  z-index: 4;
+
+
+}
+
+
+.message-form:hover {
+    border: 2px solid #999
+}
+@media (max-width:500px) {
+    .header .app-link {
+        padding-left: 10px
+    }
+.user-list {
+        display: none
+    }
+    .thread .thread-container .messages-container {
+        padding: 44px 0 0
+    }
+
+    .message-form {
+        margin: 0 16px 16px
+        position:absolute;
+    }
+}
+.login{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+.modal h2{
+    margin-left: 0px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.modal h3{
+    margin-left: 0px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#name{
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+#icon0, #icon1, #icon2{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#icon0:hover, #icon1:hover, #icon2:hover{
+    opacity: 1;
+}
+
+#complete-btn{
+  display: inline-block;
+  padding: 14px 80px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.line_icon{
+    margin-left: 5px;
+    margin-right:5px;
+}

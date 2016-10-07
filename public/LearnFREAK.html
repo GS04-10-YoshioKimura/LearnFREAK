@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learn FREAK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="css/style.css" type="text/css" /> -->
+    <link rel="ico" type="image/jpg" href="G'sAcademy_logoB_mini.jpg" width="200px" height="100px">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" href="./stylesheets/lf.css">
+    <!-- <script src="../jquery-2.1.3.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Raleway:600,500,400,300,200,200italic);
+    </style>
+</head>
+
+<body>
+    <script async="" src=""></script>
+
+<!--
+    <div id='vote'>
+        <input type='button' value="good" id='good'></input>
+        <input type='button' value="bad" id='bad'></input>
+    </div> -->
+
+    <div class="xxx">
+        <div id="percent"></div>
+        <canvas id="ugCanvas"></canvas>
+        <div class="btn01">
+        </div>
+
+        <div class="sample clearfix">
+            <input type="radio" name="s2" id="off" value="0" checked="checked">
+            <label for="off" class="switch-off" id="btnng">う〜ん。。</label>
+            <input type="radio" name="s2" id="on" value="1">
+            <label for="on" class="switch-on" id="btnok">なるほど！</label>
+        </div>
+
+    </div>
+    <div id="app">
+        <div data-reactroot="" class="app-container">
+            <div class="header">
+                <div class="app-link">
+                    <img class="app-logo" width="80px" src="./images/G'sAcademy_logoB_mini.jpg">
+                    <div class="app-name">Learn FREAK</div>
+                    <a href="http://gsacademy.tokyo/" target="_blank"></a>
+                </div>
+                 <p>接続数:<span id="count"></span></p>
+                <div class="user-view"><img class="ico" src="">
+                    <div class="name"></div>
+                    <a class="sign-out"></a>
+                </div>
+            </div>
+            <div class="thread">
+                <div class="user-list">
+                </div>
+                <div class="thread-container">
+                    <div class="messages-container" id="board">
+                        <div id="dummy"></div>
+                        <div class="messages">
+                            <div class="message">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="con">
+                        <textarea class="message-form txt" name="" id="content" maxlength="240" placeholder="Enterで投稿"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="modal">
+            <h2>ログイン</h2>
+            <h3>ルーム名</h3>
+            <textarea id="name" cols="15" rows="1"></textarea>
+            <div id="complete-btn">入力完了</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./javascript/index.js"></script>
+    <script type="text/javascript" src="./javascript/urlAutolink.js"></script>
+    <script type="text/javascript" src="./vote/Chart.js"></script>
+    <link rel="stylesheet" href="./vote/index.css">
+    <script src="./vote/donutchart.js"></script>
+    <script>
+      var socket = io.connect();
+      var $count = $('#count');
+
+      socket.on('count', function(data) {
+          // alert();
+          var ddd = " "+data / 2;
+          $count.text(ddd);
+      });
+
+
+  </script>
+
+</body>
+
+</html>

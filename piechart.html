@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Firebaseサンプル1</title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/knockout-3.0.0.js"></script>
+    <script src="js/globalize.min.js"></script>
+    <script src="js/dx.chartjs.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDuFBtMhGzO_V55sQtIvrdoGE7wxK0unfY",
+            authDomain: "kinetic-silicon-142211.firebaseapp.com",
+            databaseURL: "https://kinetic-silicon-142211.firebaseio.com",
+            storageBucket: "kinetic-silicon-142211.appspot.com",
+            messagingSenderId: "1008155267789"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script>
+        $("#piechart").dxPieChart({
+            "dataSource": [{
+                "arg": "Russia",
+                "val": 12
+            }, {
+                "arg": "Canada",
+                "val": 7
+            }, {
+                "arg": "USA",
+                "val": 7
+            }, {
+                "arg": "China",
+                "val": 7
+            }, {
+                "arg": "Brazil",
+                "val": 6
+            }, {
+                "arg": "Australia",
+                "val": 5
+            }, {
+                "arg": "India",
+                "val": 2
+            }, {
+                "arg": "Others",
+                "val": 55
+            }],
+            "series": {}
+        });
+    </script>
+
+<body>
+  <div id="chartContainer"></div>
+
+    <div>
+        <input id="name" placeholder="名前" />
+        <input id="message" placeholder="メッセージ" />
+        <button id="send">投稿</button>
+    </div>
+    <ul id="messages">
+    </ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script>
+        // データベースの参照を準備
+        var firebaseRef = new Firebase("https://my-first-chat-app.firebaseio.com"); // ... 1
+        var messagesRef = firebaseRef.child('messages'); // ... 2
+
+        // 既存メッセージを表示
+        messagesRef.on('child_added', function(snapshot) { // ... 3
+            var msg = snapshot.val();
+            $('<li>').text(msg.name + ': ' + msg.body).prependTo('#messages');
+        });
+
+        $('#send').click(function() {
+            // 新規メッセージを投稿
+            messagesRef.push({ // ... 4
+                name: $('#name').val(),
+                body: $('#message').val()
+            });
+        });
+    </script>
+</body>
+
+</html>
